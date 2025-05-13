@@ -268,7 +268,7 @@
         }
 
         function updateLoadingProgress(progress) {
-            loadingProgress.style.width = ${progress}%;
+            loadingProgress.style.width = `${progress}%`;
         }
 
         // Show initial fact
@@ -359,7 +359,7 @@
                     if (keypoint.score > 0.5) {
                         const x = keypoint.position.x;
                         const y = keypoint.position.y;
-                        console.log(Drawing keypoint ${keypoint.part}:, {
+                        console.log(`Drawing keypoint ${keypoint.part}:`, {
                             position: { x, y },
                             score: keypoint.score
                         });
@@ -389,7 +389,7 @@
                         const x2 = part2.position.x;
                         const y2 = part2.position.y;
                         
-                        console.log(Drawing skeleton line between ${pair[0]} and ${pair[1]}:, {
+                        console.log(`Drawing skeleton line between ${pair[0]} and ${pair[1]}:`, {
                             part1: { x: x1, y: y1 },
                             part2: { x: x2, y: y2 }
                         });
@@ -600,4 +600,4 @@
         }
     </script>
 </body>
-</html>
+</html> 
